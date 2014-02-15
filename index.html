@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>eGate Solutions - TS4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/jquery/jquery.mobile-1.4.1.min.css">
+    <link rel="stylesheet" href="./css/master.min.css">
+    <script src="./js/jquery/jquery.min.js"></script>
+    <script src="./js/jquery/jquery.mobile-1.4.1.js"></script>
+    <script src="./js/index.min.js"></script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header"><h1>eGate Solutions TS4</h1></div>
+        <nav data-role="content">
+            <ul>
+                <li><a href="./barset/open.html" rel="external"><img src="./images/48x48/tasks.png" alt="" width="48" height="48" />Barset</a></li>
+                <li><img src="./images/48x48/plane.png" alt="" width="48" height="48" />Flight</li>
+                <li><a href="./flight/login.html" data-ajax="false" data-rel="external"><img src="./images/48x48/keys.png" alt="" width="48" height="48" />Login</a></li>
+                <li><img src="./images/48x48/dollar.gif" alt="" width="48" height="48" />Sales</li>
+                <li><a href="#pnlReports"><img src="./images/48x48/chart.gif" alt="" width="48" height="48" />Reports</a></li>
+                <li><a href="./sync/index.html" rel="external"><img src="./images/48x48/sync.png" alt="" width="48" height="48" />Sync</a></li>
+                <li><a href="./catering/index.html" rel="external"><img src="./images/48x48/truck.gif" alt="" width="48" height="48" />Catering</a></li>
+                <li><a href="#pnlUtils"><img src="./images/48x48/Tools.gif" alt="" width="48" height="48" />Utilities</a></li>
+                <li><a href="./uplift/index.html" data-ajax="false" rel="external"><img src="./images/48x48/forklift.png" alt="" width="48" height="48" />Uplift</a></li>
+            </ul>
+            <br />
+        </nav>
+
+        <div id="pnlUtils" data-role="panel" data-display="overlay">
+            <div class="ui-bar">
+                <h3><img src="./images/32x32/settings.png" alt="" width="32" height="32" /> Utilities</h3>
+            </div>
+            <hr />
+            <table style="width:100%">
+                <tr>
+                    <td><label for="AirportMode">Airplane Mode:</label></td>
+                    <td>
+                        <select name="flip-1" id="AirportMode" data-role="slider">
+                            <option value="0">Off</option>
+                            <option value="1">On</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Wifi">Wi-Fi:</label></td>
+                    <td>
+                        <select name="flip-1" id="Wifi" data-role="slider">
+                            <option value="0">Off</option>
+                            <option value="1" selected="selected">On</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Bluetooth">Bluetooth:</label></td>
+                    <td>
+                        <select name="flip-1" id="Bluetooth" data-role="slider">
+                            <option value="0">Off</option>
+                            <option value="1" selected="selected">On</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Bluetooth">Screen Rotation:</label></td>
+                    <td>
+                        <select name="ScreenRotation" id="ScreenRotation" data-role="slider">
+                            <option value="0">Off</option>
+                            <option value="1" selected="selected">On</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="pnlReports" data-role="panel" data-display="overlay">
+            <h2 data-rel="close"><img src="/images/48x48/chart.gif" alt="" width="32" height="32" /> Reports</h2>
+            <ul data-role="listview">
+                <li><a href="./reports/outofstocksummary.html" data-rel="external">Out of Stock Summary</a></li>
+                <li><a href="#popupNotEnabled" data-rel="popup">Change Due</a></li>
+                <li><a href="./reports/salessummary.html" data-rel="external">Sales Summary</a></li>
+                <li><a href="./reports/stocksummary.html" data-rel="external">Stock Summary</a></li>
+                <li><a href="./reports/payment.html" data-rel="external">Payment</a></li>
+                <li><a href="./reports/categorysalessummary.html" data-rel="external">Category Sales Summary</a></li>
+                <li><a href="./reports/itemssold-pax.html" data-rel="external">Items Sold / Pax</a></li>
+            </ul>
+        </div>
+
+        <div id="popupNotEnabled" data-role="popup">
+            <p><img src="./images/32x32/info.png" alt="" width="32" height="32" /> Sorry, but this feature has not yet been enabled.</p>
+        </div>
+
+    </div>
+</body>
+</html>
